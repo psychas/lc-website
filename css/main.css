@@ -45,9 +45,10 @@ form .input-container input  {
 }
 
 
-@media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
     .rave-image{
         border:5px dashed black;
         transform: rotate(1200deg)
     }
-}
+} */
