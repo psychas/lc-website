@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.steve {
+    text-align: center;
+}
+
+.rave-image {
+    width: 100%;
+    padding: 100px;
+    border: 10px solid yellow;
+    margin: 100px 0;
+    transition: transform 2s;
+}
+
+h1{
+        transition: all 10s;
+
+}
+
+h1:hover {
+    text-align: center;
+    font-family: monospace;
+    transform:rotate(1200deg)
+
+}
+
+section a {
+    font-family: monospace;
+}
+
+form .input-container {
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    font-family: monospace;
+}
+
+form .input-container input  {
+    width: 200px;
+    border:0;
+    border-bottom:1px solid black;
+    margin-top:10px;
+}
+
+
+@media (min-width: 768px) {
+    .rave-image{
+        border:5px dashed black;
+        transform: rotate(1200deg)
+    }
+}
