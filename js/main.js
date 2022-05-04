@@ -35,3 +35,29 @@ let response = [{ age: 150 }, { height: 150 }, post]
 console.log(data)
 console.log(response)
 console.table(response)
+
+
+// Arrow Functions
+const addTwoNumbers = (x, y) => {
+    const result = x + y;
+    console.log(result);
+} 
+
+addTwoNumbers(10, 7);
+addTwoNumbers(a, post.likes.count)
+addTwoNumbers('Steve', 'Stevenson')
+addTwoNumbers(false, 100)
+
+let wikipediaLink = document.getElementById('wiki-link');
+// let wikiLink = document.querySelector('.class')
+// let wikiLink = document.querySelector('#id')
+wikipediaLink.innerHTML = 'I AM THE NEW LINK FOR WIKIPEDIA'
+wikipediaLink.style.backgroundColor = 'red'
+wikipediaLink.style.border = '5px dashed blue'
+console.log(wikipediaLink)
+
+let raveElement = document.getElementsByClassName('rave-image')[0]
+
+raveElement.addEventListener('click', () => {
+   raveElement.style.transform = 'rotate(360deg)'
+})
