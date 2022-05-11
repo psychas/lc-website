@@ -22,29 +22,25 @@
 h1:hover {
     text-align: center;
     font-family: monospace;
-    transform:rotate(1200deg)
-
-} */
-
-section a {
+    transform: rotate(1200deg);
+}
+*/ section a {
     font-family: monospace;
 }
 
 form .input-container {
     padding: 10px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     font-family: monospace;
 }
 
-form .input-container input  {
+form .input-container input {
     width: 200px;
-    border:0;
-    border-bottom:1px solid black;
-    margin-top:10px;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
 }
-
-
 
 /* @media (min-width: 768px) {
     .rave-image{
@@ -53,19 +49,23 @@ form .input-container input  {
     }
 } */
 
-.message-card{
-    border:1px solid black;
-    width:200px;
-    margin:10px;
-    padding:10px;
+#vue-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.message-card {
+    border: 1px solid black;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 10px;
-    background:#ebebeb;
+    background: #ebebeb;
 }
 
-.message-card h1{
-    background-color:blue;
+.message-card h1 {
+    background-color: blue;
     border-radius: 10px;
-    color:white;
-    padding:10px;
-    margin:10px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
 }

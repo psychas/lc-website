@@ -30,27 +30,25 @@ console.log(post.likes.count)
 
 //Arrays
 let data = [123, 'steve']
-let response = [{ age: 150 }, { height: 150 }, [{steve: post}]]
-
+let response = [{ age: 150 }, { height: 150 }, [{ steve: post }]]
 
 console.log(data)
 console.log(data[0])
 console.log(response)
 console.table(response)
 
-
 // Arrow Functions
 const addTwoNumbers = (x, y) => {
-    const result = x + y;
-    console.log(result);
-} 
+    const result = x + y
+    console.log(result)
+}
 
-addTwoNumbers(10, 7);
+addTwoNumbers(10, 7)
 addTwoNumbers(a, post.likes.count)
 addTwoNumbers('Steve', 'Stevenson')
 addTwoNumbers(false, 100)
 
-let wikipediaLink = document.getElementById('wiki-link');
+let wikipediaLink = document.getElementById('wiki-link')
 // let wikiLink = document.querySelector('.class')
 // let wikiLink = document.querySelectorAll('#id')
 wikipediaLink.innerHTML = 'I AM THE NEW LINK FOR WIKIPEDIA'
@@ -62,9 +60,8 @@ let raveElement = document.getElementsByClassName('rave-image')[0]
 
 raveElement.addEventListener('click', (event) => {
     console.log(event)
-   raveElement.style.transform = 'rotate(360deg)'
+    raveElement.style.transform = 'rotate(360deg)'
 })
-
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -85,9 +82,63 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            message: 'Hello Vue!',
-            sender: 'George',
-            timestamp: '13.34'
+            messages: [
+                {
+                    text: 'Hello Vue!',
+                    sender: 'George',
+                    timestamp: '13.34',
+                },
+                {
+                    text: 'Hello Steve!',
+                    sender: 'Jenny',
+                    timestamp: '13.35',
+                },
+                {
+                    text: 'Goodbye Vue!',
+                    sender: 'Vue',
+                    timestamp: '14.34',
+                },
+                {
+                    text: 'VUE',
+                    sender: 'Steve',
+                    timestamp: '18.34',
+                },
+                {
+                    text: 'Hello Steve!',
+                    sender: 'Jenny',
+                    timestamp: '13.35',
+                },
+                {
+                    text: 'Goodbye Vue!',
+                    sender: 'Vue',
+                    timestamp: '14.34',
+                },
+                {
+                    text: 'VUE',
+                    sender: 'Steve',
+                    timestamp: '18.34',
+                },
+                {
+                    text: 'Hello Steve!',
+                    sender: 'Jenny',
+                    timestamp: '13.35',
+                },
+                {
+                    text: 'Goodbye Vue!',
+                    sender: 'Vue',
+                    timestamp: '14.34',
+                },
+                {
+                    text: 'VUE',
+                    sender: 'Steve',
+                    timestamp: '18.34',
+                },
+                {
+                    text: 'VUE 2',
+                    sender: 'Steve',
+                    timestamp: '18.34',
+                },
+            ],
         }
     },
 }).mount('#vue-container')
