@@ -31,6 +31,13 @@
             <section class="steve">
                 <h1>Welcome to Berlin</h1>
             </section>
+            <section  id="vue-container">
+                <div class="message-card">
+                    <h1>{{message}}</h1>
+                    <p>from:  {{sender}}</p>
+                    <p>{{timestamp}}</p>
+                </div>
+            </section>
             <section>
                 <img
                     class="rave-image"
@@ -94,6 +101,7 @@
                 </form>
             </section>
         </main>
+        <script src="https://unpkg.com/vue@3"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>

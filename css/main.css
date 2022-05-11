@@ -14,17 +14,17 @@
     transition: transform 2s;
 }
 
-h1{
+/* h1{
         transition: all 10s;
 
-}
+/* } */
 
 h1:hover {
     text-align: center;
     font-family: monospace;
     transform:rotate(1200deg)
 
-}
+} */
 
 section a {
     font-family: monospace;
@@ -52,3 +52,20 @@ form .input-container input  {
         transform: rotate(1200deg)
     }
 } */
+
+.message-card{
+    border:1px solid black;
+    width:200px;
+    margin:10px;
+    padding:10px;
+    border-radius: 10px;
+    background:#ebebeb;
+}
+
+.message-card h1{
+    background-color:blue;
+    border-radius: 10px;
+    color:white;
+    padding:10px;
+    margin:10px;
+}

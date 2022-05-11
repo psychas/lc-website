@@ -10,6 +10,7 @@ const vasilis = 100 // number
 const name = 'Steve' // string
 let canIFly = false //boolean
 
+console.log(name[0])
 // Objects
 const post = {
     title: 'Welcome to berlin',
@@ -29,10 +30,11 @@ console.log(post.likes.count)
 
 //Arrays
 let data = [123, 'steve']
-let response = [{ age: 150 }, { height: 150 }, post]
+let response = [{ age: 150 }, { height: 150 }, [{steve: post}]]
 
 
 console.log(data)
+console.log(data[0])
 console.log(response)
 console.table(response)
 
@@ -50,7 +52,7 @@ addTwoNumbers(false, 100)
 
 let wikipediaLink = document.getElementById('wiki-link');
 // let wikiLink = document.querySelector('.class')
-// let wikiLink = document.querySelector('#id')
+// let wikiLink = document.querySelectorAll('#id')
 wikipediaLink.innerHTML = 'I AM THE NEW LINK FOR WIKIPEDIA'
 wikipediaLink.style.backgroundColor = 'red'
 wikipediaLink.style.border = '5px dashed blue'
@@ -58,6 +60,34 @@ console.log(wikipediaLink)
 
 let raveElement = document.getElementsByClassName('rave-image')[0]
 
-raveElement.addEventListener('click', () => {
+raveElement.addEventListener('click', (event) => {
+    console.log(event)
    raveElement.style.transform = 'rotate(360deg)'
 })
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let steve = { age: 15, hair: 'blue' }
+
+// steve.age
+// steve['age']
+
+// let { age } = steve
+
+const { createApp } = Vue
+
+createApp({
+    data() {
+        return {
+            message: 'Hello Vue!',
+            sender: 'George',
+            timestamp: '13.34'
+        }
+    },
+}).mount('#vue-container')
